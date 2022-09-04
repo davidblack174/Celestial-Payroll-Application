@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF888746-619B-481F-8079-6B33304EF8B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CelestialPayRoll.My.MyApplication</StartupObject>
+    <RootNamespace>CelestialPayRoll</RootNamespace>
+    <AssemblyName>CelestialPayRoll</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\David-Development PC\Desktop\Celestial PayRoll\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <InstallUrl>\\localhost\Users\David-Development PC\Desktop\Celestial PayRoll\</InstallUrl>
+    <ProductName>PayRoll Software</ProductName>
+    <PublisherName>David Odediran</PublisherName>
+    <SuiteName>Celestial PayRoll Application</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CelestialPayRoll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CelestialPayRoll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CelestialPayRollApp.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>43022CA05613E0200DB63E2082FDBD077100E7B1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CelestialPayRoll_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AnalysisServices, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.SPClient.Interfaces, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbouCelestialPayRollApp.Designer.vb">
+      <DependentUpon>AbouCelestialPayRollApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AbouCelestialPayRollApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllEmployee.Designer.vb">
+      <DependentUpon>AllEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPaymentForm.Designer.vb">
+      <DependentUpon>AllPaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllPaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CelestialPayRollDatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelestialPayRollDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelestialPayRollDatabaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelestialPayRollDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelestialPayRollDatabaseDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelestialPayRollDatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelestialPayRollDatabaseDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelestialPayRollDatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelestialPayRollDatabaseDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelestialPayRollDatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelestialPayRollDatabaseDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelestialPayRollDatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelestialPayRollDatabaseDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelestialPayRollDatabaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentMonthPayment.Designer.vb">
+      <DependentUpon>CurrentMonthPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentMonthPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetailForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetailForm.Designer.vb">
+      <DependentUpon>EmployeeDetailForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PayRollCalculatorForm.Designer.vb">
+      <DependentUpon>PayRollCalculatorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayRollCalculatorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollMDI.Designer.vb">
+      <DependentUpon>PayrollMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviewForm.Designer.vb">
+      <DependentUpon>PreviewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.vb">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbouCelestialPayRollApp.resx">
+      <DependentUpon>AbouCelestialPayRollApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllEmployee.rdlc" />
+    <EmbeddedResource Include="AllEmployee.resx">
+      <DependentUpon>AllEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPayment.rdlc" />
+    <EmbeddedResource Include="AllPaymentForm.resx">
+      <DependentUpon>AllPaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentMonthPayment.rdlc" />
+    <EmbeddedResource Include="CurrentMonthPayment.resx">
+      <DependentUpon>CurrentMonthPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetailForm.resx">
+      <DependentUpon>EmployeeDetailForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayRollCalculatorForm.resx">
+      <DependentUpon>PayRollCalculatorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollMDI.resx">
+      <DependentUpon>PayrollMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviewForm.resx">
+      <DependentUpon>PreviewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CelestialPayRollDatabaseDataSet.xsc">
+      <DependentUpon>CelestialPayRollDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelestialPayRollDatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet.xss">
+      <DependentUpon>CelestialPayRollDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet1.xsc">
+      <DependentUpon>CelestialPayRollDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelestialPayRollDatabaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet1.xss">
+      <DependentUpon>CelestialPayRollDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet2.xsc">
+      <DependentUpon>CelestialPayRollDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelestialPayRollDatabaseDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet2.xss">
+      <DependentUpon>CelestialPayRollDatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet3.xsc">
+      <DependentUpon>CelestialPayRollDatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelestialPayRollDatabaseDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet3.xss">
+      <DependentUpon>CelestialPayRollDatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet4.xsc">
+      <DependentUpon>CelestialPayRollDatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelestialPayRollDatabaseDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet4.xss">
+      <DependentUpon>CelestialPayRollDatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet5.xsc">
+      <DependentUpon>CelestialPayRollDatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelestialPayRollDatabaseDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet5.xss">
+      <DependentUpon>CelestialPayRollDatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet6.xsc">
+      <DependentUpon>CelestialPayRollDatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelestialPayRollDatabaseDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelestialPayRollDatabaseDataSet6.xss">
+      <DependentUpon>CelestialPayRollDatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CelestialPayRoll_1_TemporaryKey.pfx" />
+    <None Include="CelestialPayRoll_2_TemporaryKey.pfx" />
+    <None Include="CelestialPayRoll_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Button - Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disk Cleanup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address Book %283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restricted %2814%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinture Zoom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button - Close %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File View.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator %284%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restricted %2814%291.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder - Printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer %2815%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-preferences-desktop-user-password-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Run %283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrative Tools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CelestialPayRollApp.ico" />
+    <Content Include="Resources\CSC.jpg" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
